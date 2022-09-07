@@ -1,15 +1,14 @@
-import { useState } from "react";
-import { GlobalStyle } from "./global";
+import { ThemeProvider } from "styled-components";
+import { GlobalStyle } from "./styles/global";
 import { Home } from "./pages";
+import { defaultTheme } from "./styles/themes";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <>
+    <ThemeProvider theme={defaultTheme}>
       <GlobalStyle />
       <Home />
-    </>
+    </ThemeProvider>
   );
 }
 
