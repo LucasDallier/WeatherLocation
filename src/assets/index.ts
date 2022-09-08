@@ -1,5 +1,3 @@
-import cloudyImg from "./cloudy.jpg";
-
 import { ReactComponent as ReactDay } from "./weather-icons/day.svg";
 import { ReactComponent as ReactNight } from "./weather-icons/night.svg";
 import { ReactComponent as ReactRainy } from "./weather-icons/rainy.svg";
@@ -9,10 +7,12 @@ import { ReactComponent as ReactSnowy } from "./weather-icons/snowy.svg";
 import { ReactComponent as ReactCloudy } from "./weather-icons/cloudy.svg";
 import { ReactComponent as ReactCloudyDay } from "./weather-icons/cloudy-day.svg";
 import { ReactComponent as ReactCloudyNight } from "./weather-icons/cloudy-night.svg";
+import { ReactComponent as ReactMist } from "./weather-icons/mist.svg";
+import { ReactComponent as ReactIconLocation } from "../assets/iconLocation.svg";
+import { ReactComponent as ReactIconRefresh } from "../assets/iconRefresh.svg";
 
 export {
   //* IMGs
-  cloudyImg,
 
   //* ICONS
   ReactDay,
@@ -24,4 +24,7 @@ export {
   ReactCloudy,
   ReactCloudyDay,
   ReactCloudyNight,
+  ReactMist,
+  ReactIconLocation,
+  ReactIconRefresh,
 };

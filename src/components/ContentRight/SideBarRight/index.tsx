@@ -1,9 +1,23 @@
-import { Container } from "./styles";
+import { ReactIconLocation, ReactIconRefresh } from "../../../assets";
+import { Container, BoxButtons, Btn } from "./styles";
 
-export function SideBarRight() {
+export function SideBarRight({
+  handleSetInfoWeather,
+}: {
+  handleSetInfoWeather: () => {};
+}) {
   return (
     <Container>
-      <h1>Side Bar left</h1>
+      <BoxButtons>
+        <Btn type="button" onClick={handleSetInfoWeather}>
+          <ReactIconLocation />
+          Current Location
+        </Btn>
+        <Btn type="button" onClick={handleSetInfoWeather}>
+          <ReactIconRefresh />
+          Refresh
+        </Btn>
+      </BoxButtons>
     </Container>
   );
 }
