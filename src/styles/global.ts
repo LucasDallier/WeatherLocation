@@ -47,7 +47,7 @@ export const GlobalStyle = createGlobalStyle`
   input,
   textarea,
   button {
-    font-family: 'Lato', sans-serif;;
+    font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-size: 1rem;
     border: none;

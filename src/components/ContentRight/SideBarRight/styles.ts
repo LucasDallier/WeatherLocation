@@ -1,29 +1,56 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const Container = styled.div`
-  width: 26vw;
+  display: flex;
+  flex-direction: column;
+
+  flex: 1;
+  gap: 20px;
+  max-width: 30%;
   height: 100%;
+  padding: 5rem 2rem;
 
-  position: absolute;
-  right: 0;
+  /* Glassmorphism */
+  background: rgb(0 0 0 / 38%);
+  border-radius: 0;
+  box-shadow: 0px 0px 5px rgb(0 0 0 / 60%);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+`;
 
-  /* From https://css.glass */
-  background: rgba(255, 255, 255, 0.12);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+export const SectionRightTop = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+
+  padding: 3rem 0rem;
+  border-top: 1px solid ${(props) => props.theme["gray-300"]};
+  border-bottom: 1px solid ${(props) => props.theme["gray-300"]};
+
+  h3 {
+    color: ${(props) => props.theme.white};
+    font-weight: 600;
+  }
+
+  > span {
+    font-size: 1.35rem;
+    font-weight: 200;
+
+    color: ${(props) => props.theme.white};
+  }
 `;
 
 export const BoxButtons = styled.div`
   display: flex;
   align-items: flex-end;
-  justify-content: center;
+  justify-content: space-around;
 
   height: 100%;
-
-  gap: 10px;
 `;
-export const Btn = styled.button`
+
+//Variable created in order not to repeat the code for styling components whose styles are "equal", changing only their width.
+export const stylesButton = css`
   position: relative;
 
   display: flex;
@@ -31,7 +58,7 @@ export const Btn = styled.button`
   justify-content: center;
 
   gap: 10px;
-  width: fit-content;
+  width: 14vw;
   height: 3.125rem;
   padding: 0 2rem;
 
@@ -67,44 +94,49 @@ export const Btn = styled.button`
   }
 `;
 
-// export const Btn = styled.button`
-//   position: relative;
+export const BtnLocation = styled.button`
+  ${stylesButton}
+`;
 
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
+export const BtnRefresh = styled.button`
+  ${stylesButton}
+  width: 9vw;
+`;
 
-//   gap: 10px;
-//   width: fit-content;
-//   height: 3.125rem;
-//   padding: 0 2rem;
+export const DescriptionInfo = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 
-//   border-radius: 0.5rem;
-//   background: ${(props) => props.theme["bluish-green"]};
+  > div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 
-//   font-weight: 500;
-//   text-transform: uppercase;
-//   color: ${(props) => props.theme.white};
+    > span {
+      color: ${(props) => props.theme.white};
+    }
 
-//   transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
-//   user-select: none;
-//   -webkit-user-select: none;
-//   touch-action: manipulation;
-//   will-change: transform;
+    > span:last-child {
+      margin-left: 5px;
+    }
 
-//   > svg {
-//     width: 25px;
-//     height: 25px;
-//   }
+    > svg {
+      width: 50px;
+      height: 50px;
+      margin-left: -20px;
+    }
 
-//   &:hover:not(:disabled) {
-//     transform: translateY(-2px);
-//     box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
-//   }
+    #wind {
+      margin-left: 0px;
+    }
+  }
 
-//   &:active {
-//     box-shadow: none;
-//     transform: translateY(0);
-//     filter: brightness(0.9);
-//   }
-// `;
+  /* p {
+    color: ${(props) => props.theme.white};
+
+    span {
+      margin-left: 20px;
+    }
+  } */
+`;

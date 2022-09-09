@@ -1,4 +1,7 @@
+//INTERFACES
 import { IWeatherLocationProps } from "../../interfaces/weather";
+
+//API
 import api, { CancelToken } from "../api";
 
 export function getWeatherLocation() {

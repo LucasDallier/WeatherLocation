@@ -10,10 +10,14 @@ import { ReactComponent as ReactCloudyNight } from "./weather-icons/cloudy-night
 import { ReactComponent as ReactMist } from "./weather-icons/mist.svg";
 import { ReactComponent as ReactIconLocation } from "../assets/iconLocation.svg";
 import { ReactComponent as ReactIconRefresh } from "../assets/iconRefresh.svg";
+import { ReactComponent as ReactHumidity } from "./weather-icons/humidity.svg";
+import { ReactComponent as ReactThermometerCelsius } from "./weather-icons/thermometer-celsius.svg";
+import { ReactComponent as ReactThermometerColder } from "./weather-icons/thermometer-colder.svg";
+import { ReactComponent as ReactThermometerWarmer } from "./weather-icons/thermometer-warmer.svg";
+import { ReactComponent as ReactThermometer } from "./weather-icons/thermometer.svg";
+import { ReactComponent as ReactWind } from "./weather-icons/wind.svg";
 
 export {
-  //* IMGs
-
   //* ICONS
   ReactDay,
   ReactNight,
@@ -27,4 +31,10 @@ export {
   ReactMist,
   ReactIconLocation,
   ReactIconRefresh,
+  ReactHumidity,
+  ReactThermometerWarmer,
+  ReactThermometer,
+  ReactWind,
+  ReactThermometerCelsius,
+  ReactThermometerColder,
 };

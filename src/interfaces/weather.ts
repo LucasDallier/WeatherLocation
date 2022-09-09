@@ -1,7 +1,6 @@
 export interface IWeatherLocationProps {
   latitude: number;
   longitude: number;
-  appid?: string;
 }
 
 export interface ITimeIconListProps {
@@ -31,4 +30,9 @@ export interface WeatherLocationDataProps {
   main: string;
   icon: keyof ITimeIconListProps;
   date: string;
+  humidity: number | string;
+  windSpeed: number;
+  temp_max: string;
+  temp_min: string;
+  feels_like: number | string;
 }

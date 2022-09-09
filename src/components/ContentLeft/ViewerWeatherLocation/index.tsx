@@ -1,3 +1,4 @@
+//ASSETS
 import {
   ReactCloudyDay,
   ReactCloudyNight,
@@ -10,14 +11,17 @@ import {
   ReactThunder,
 } from "../../../assets";
 
+//INTERFACES
 import { WeatherLocationDataProps } from "../../../interfaces/weather";
 
+//STYLES
 import {
   Container,
-  Content,
-  Degrees,
-  CityAndHours,
+  City,
+  Section,
   WeatherIcon,
+  ContentMoreInfo,
+  CityAndHours,
 } from "./styles";
 interface IDataWeather {
   dataWeatherLocation: WeatherLocationDataProps;
@@ -47,20 +51,30 @@ export function ViewerWeatherLocation({ dataWeatherLocation }: IDataWeather) {
   const TimeIconListComponent = TimeIconList[dataWeatherLocation.icon];
 
   return (
-    <Container icon={dataWeatherLocation.icon}>
-      <Content>
-        <Degrees>
-          <span>{`${dataWeatherLocation.temp}°`} </span>
-        </Degrees>
+    <Container>
+      <City>
+        <span className="city">{dataWeatherLocation.location}</span>
+      </City>
+
+      <Section>
+        <span>{dataWeatherLocation.temp}°</span>
+
+        <ContentMoreInfo>
+          <span>Max: {dataWeatherLocation.temp_max}°</span>
+          <span>Min: {dataWeatherLocation.temp_min}°</span>
+          <span>Feels Like: {dataWeatherLocation.feels_like}°</span>
+        </ContentMoreInfo>
+
         <CityAndHours>
           <span>{dataWeatherLocation.location}</span>
           <p>{dataWeatherLocation.date}</p>
         </CityAndHours>
+
         <WeatherIcon>
           <TimeIconListComponent />
           <span>{dataWeatherLocation.main}</span>
         </WeatherIcon>
-      </Content>
+      </Section>
     </Container>
   );
 }
