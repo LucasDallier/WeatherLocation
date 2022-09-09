@@ -24,8 +24,8 @@ export const SectionRightTop = styled.div`
 
   gap: 20px;
 
-  padding: 3rem 0rem;
-  border-top: 1px solid ${(props) => props.theme["gray-300"]};
+  padding: 1rem 0rem;
+
   border-bottom: 1px solid ${(props) => props.theme["gray-300"]};
 
   h3 {
@@ -131,12 +131,4 @@ export const DescriptionInfo = styled.div`
       margin-left: 0px;
     }
   }
-
-  /* p {
-    color: ${(props) => props.theme.white};
-
-    span {
-      margin-left: 20px;
-    }
-  } */
 `;

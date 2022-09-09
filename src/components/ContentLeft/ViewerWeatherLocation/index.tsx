@@ -64,11 +64,11 @@ export function ViewerWeatherLocation({ dataWeatherLocation }: IDataWeather) {
           <span>Min: {dataWeatherLocation.temp_min}°</span>
           <span>Feels Like: {dataWeatherLocation.feels_like}°</span>
         </ContentMoreInfo>
-
+        {/* 
         <CityAndHours>
           <span>{dataWeatherLocation.location}</span>
           <p>{dataWeatherLocation.date}</p>
-        </CityAndHours>
+        </CityAndHours> */}
 
         <WeatherIcon>
           <TimeIconListComponent />

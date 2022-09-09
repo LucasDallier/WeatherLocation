@@ -31,6 +31,16 @@ export function SideBarRight({
   return (
     <Container>
       <SectionRightTop>
+        <h3>Current Day</h3>
+        <DescriptionInfo>
+          <div>
+            <span>
+              <p>{dataInfoDescription.date}</p>{" "}
+            </span>
+          </div>
+        </DescriptionInfo>
+      </SectionRightTop>
+      <SectionRightTop>
         <h3>Location Information</h3>
 
         <DescriptionInfo>
