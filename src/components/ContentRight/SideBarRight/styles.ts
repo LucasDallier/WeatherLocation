@@ -45,7 +45,7 @@ export const BoxButtons = styled.div`
   align-items: flex-end;
   justify-content: space-around;
 
-  height: 100vh;
+  height: auto;
 `;
 
 //Variable created in order not to repeat the code for styling components whose styles are "equal", changing only their width.
