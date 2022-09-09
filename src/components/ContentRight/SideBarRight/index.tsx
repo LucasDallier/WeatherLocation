@@ -1,4 +1,3 @@
-//ASSETS
 import {
   ReactHumidity,
   ReactIconLocation,
