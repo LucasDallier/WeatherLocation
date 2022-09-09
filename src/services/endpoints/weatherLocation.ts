@@ -15,6 +15,5 @@ export function getWeatherLocation() {
       { cancelToken: source.token }
     );
   }
-
   return { source, apiCall };
 }
