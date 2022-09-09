@@ -7,7 +7,6 @@ export const Container = styled.div`
   flex: 1;
   gap: 20px;
   max-width: 30%;
-  height: 100%;
   padding: 5rem 2rem;
 
   /* Glassmorphism */

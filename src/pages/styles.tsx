@@ -57,8 +57,12 @@ const TimeIconBackgroundList = {
 export const Container = styled.div<IContainerProps>`
   display: flex;
   align-items: center;
+
   width: 100%;
-  height: 100vh;
+  height: 100%;
+
+  overflow-y: auto;
+
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url(${(props) => TimeIconBackgroundList[props.icon]});
 `;
