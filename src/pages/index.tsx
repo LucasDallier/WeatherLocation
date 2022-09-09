@@ -50,8 +50,6 @@ export function Home() {
           longitude: position.coords?.longitude || 8.53185,
         });
 
-        console.log("data", data);
-
         setDataWeatherLocation({
           temp: Math.round(data?.main?.temp) ?? "--",
           location: data?.name || "--",
@@ -68,8 +66,6 @@ export function Home() {
       } catch (error) {}
     });
   }, []);
-
-  console.log("dataWeatherLocation", dataWeatherLocation);
 
   return (
     <Container icon={dataWeatherLocation.icon}>
