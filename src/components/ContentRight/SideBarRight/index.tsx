@@ -45,7 +45,7 @@ export function SideBarRight({
 
         <DescriptionInfo>
           <div>
-            <span>Humidty: </span>
+            <span>Humidity: </span>
             <span>{`${dataInfoDescription.humidity}%`}</span>
             <ReactHumidity />
           </div>
