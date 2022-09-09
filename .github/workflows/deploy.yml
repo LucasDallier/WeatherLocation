@@ -17,8 +17,9 @@ jobs:
           node-version: "14.x"
 
       - name: "Build"
-        run: npm install
-        run: npm run build
+        run: |
+          npm install
+          npm run build
         env:
           VITE_API_BASE_URL: ${{ secrets.API_WEATHER_BASE_URL }}
           VITE_APPID: ${{ secrets.API_WEATHER_ID }}
