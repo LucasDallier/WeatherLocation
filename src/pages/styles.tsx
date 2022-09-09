@@ -58,7 +58,7 @@ export const Container = styled.div<IContainerProps>`
   display: flex;
   align-items: center;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url(${(props) => TimeIconBackgroundList[props.icon]});
 `;
