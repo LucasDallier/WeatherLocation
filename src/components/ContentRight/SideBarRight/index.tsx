@@ -1,15 +1,5 @@
-//ASSETS
-import {
-  ReactHumidity,
-  ReactIconLocation,
-  ReactIconRefresh,
-  ReactThermometer,
-  ReactThermometerCelsius,
-  ReactThermometerColder,
-  ReactThermometerWarmer,
-  ReactWind,
-} from "../../../assets";
 import { WeatherLocationDataProps } from "../../../interfaces/weather";
+import { Icon } from "../../Icon";
 
 //STYLES
 import {
@@ -25,11 +15,11 @@ export function SideBarRight({
   handleSetInfoWeather,
   dataInfoDescription,
 }: {
-  handleSetInfoWeather: () => {};
+  handleSetInfoWeather: () => void;
   dataInfoDescription: WeatherLocationDataProps;
 }) {
   return (
-    <Container>
+    <Container data-testid="side-bar-right">
       <SectionRightTop>
         <h3>Current Day</h3>
         <DescriptionInfo>
@@ -47,52 +37,50 @@ export function SideBarRight({
           <div>
             <span>Humidity: </span>
             <span>{`${dataInfoDescription.humidity}%`}</span>
-            <ReactHumidity />
+            <Icon code="reactHumidity" />
           </div>
           <div>
             <span>Temp:</span>
             <span>{`${dataInfoDescription.temp}°`}</span>
-            <ReactThermometerCelsius />
+            <Icon code="reactThermometerCelsius" />
           </div>
           <div>
             <span>Temp Max:</span>
             <span>{`${dataInfoDescription.temp_max}°`}</span>
-            <ReactThermometerWarmer />
+            <Icon code="reactThermometerWarmer" />
           </div>
           <div>
             <span>Temp Min:</span>
             <span>{`${dataInfoDescription.temp_min}°`}</span>
-            <ReactThermometer />
+            <Icon code="reactThermometer" />
           </div>
           <div>
             <span>Feels Like:</span>
             <span>{`${dataInfoDescription.feels_like}°`}</span>
 
             {dataInfoDescription.feels_like < dataInfoDescription.temp ? (
-              <ReactThermometerColder />
+              <Icon code="reactThermometerColder" />
             ) : (
-              <ReactThermometerWarmer />
+              <Icon code="reactThermometerWarmer" />
             )}
           </div>
           <div>
             <span>Wind Speed:</span>
             <span>{`${dataInfoDescription.windSpeed?.toFixed(0)} km/h`}</span>
-            <ReactWind id="wind" />
+            <Icon code="reactWind" id="wind" />
           </div>
         </DescriptionInfo>
       </SectionRightTop>
       <BoxButtons>
         <BtnLocation type="button" onClick={handleSetInfoWeather}>
-          <ReactIconLocation />
+          <Icon code="reactIconLocation" />
           Current Location
         </BtnLocation>
         <BtnRefresh type="button" onClick={handleSetInfoWeather}>
-          <ReactIconRefresh />
+          <Icon code="reactIconRefresh" />
           Refresh
         </BtnRefresh>
       </BoxButtons>
     </Container>
   );
 }
-
-export default SideBarRight;

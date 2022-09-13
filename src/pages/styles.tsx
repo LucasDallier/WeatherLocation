@@ -9,29 +9,10 @@ import BackgroundShowerRain from "../assets/background-weather/background-shower
 import BackgroundSnowDay from "../assets/background-weather/background-snow-day.jpg";
 import BackgroundSnowNight from "../assets/background-weather/background-snow-night.jpg";
 import BackgroundThunderStorm from "../assets/background-weather/background-thunder-storm.jpg";
-
-interface ITimeBackgroundListProps {
-  "01d": string;
-  "01n": string;
-  "02d": string;
-  "02n": string;
-  "03d": string;
-  "03n": string;
-  "04d": string;
-  "04n": string;
-  "09d": string;
-  "09n": string;
-  "10d": string;
-  "10n": string;
-  "11d": string;
-  "11n": string;
-  "13d": string;
-  "13n": string;
-  "50d": string;
-}
+import { ITimeIconListProps } from "../interfaces/weather";
 
 interface IContainerProps {
-  icon: keyof ITimeBackgroundListProps;
+  icon: keyof ITimeIconListProps;
 }
 
 const TimeIconBackgroundList = {

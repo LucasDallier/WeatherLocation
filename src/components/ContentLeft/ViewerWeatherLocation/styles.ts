@@ -64,20 +64,3 @@ export const WeatherIcon = styled.div`
     color: ${(props) => props.theme.white};
   }
 `;
-
-export const CityAndHours = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  > span {
-    font-size: 2.438rem;
-    font-weight: 400;
-
-    color: ${(props) => props.theme.white};
-  }
-
-  p {
-    color: ${(props) => props.theme.white};
-  }
-`;

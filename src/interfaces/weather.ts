@@ -22,6 +22,16 @@ export interface ITimeIconListProps {
   "13n": string;
   "50d": string;
 }
+export interface IStatusTime {
+  reactIconLocation: string;
+  reactIconRefresh: string;
+  reactHumidity: string;
+  reactThermometerCelsius: string;
+  reactThermometerColder: string;
+  reactThermometerWarmer: string;
+  reactThermometer: string;
+  reactWind: string;
+}
 
 export interface WeatherLocationDataProps {
   temp: number | string;

@@ -6,7 +6,7 @@ import { WeatherLocationDataProps } from "../interfaces/weather";
 
 //COMPONENTS
 import { ViewerWeatherLocation } from "../components/ContentLeft/ViewerWeatherLocation";
-import SideBarRight from "../components/ContentRight/SideBarRight";
+import { SideBarRight } from "../components/ContentRight/SideBarRight";
 
 //SERVICES
 import { getWeatherLocation } from "../services/endpoints/weatherLocation";
