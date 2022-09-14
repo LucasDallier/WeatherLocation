@@ -4,7 +4,7 @@ import BackgroundBrokenClouds from "../assets/background-weather/background-brok
 import BackgroundFewCloudsNight from "../assets/background-weather/background-few-clouds-night.jpg";
 import BackgroundFewClouds from "../assets/background-weather/background-few-clouds.jpg";
 import BackgroundMist from "../assets/background-weather/background-mist.jpg";
-import BackgroundScatteredClouds from "../assets/background-weather/background-scattered clouds.jpg";
+import BackgroundScatteredClouds from "../assets/background-weather/background-scattered-clouds.jpg";
 import BackgroundShowerRain from "../assets/background-weather/background-shower-rain.jpg";
 import BackgroundSnowDay from "../assets/background-weather/background-snow-day.jpg";
 import BackgroundSnowNight from "../assets/background-weather/background-snow-night.jpg";
