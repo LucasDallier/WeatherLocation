@@ -18,11 +18,6 @@ export const Container = styled.div`
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
 
-  @media (max-height: 720px) {
-    height: none;
-
-    padding: 0rem 2rem;
-  }
   @media (max-height: 900px) {
     padding: 0rem 2rem;
   }
@@ -50,10 +45,10 @@ export const SectionRightTop = styled.div`
     color: ${(props) => props.theme.white};
   }
 
-  @media (max-height: 720px) {
+  @media (max-height: 900px) {
     gap: 5px;
 
-    padding: 1.7rem 0rem;
+    padding: 1.6rem 0rem;
   }
 `;
 
