@@ -1,6 +1,6 @@
 # Weather Location ⛅
 
-<img src="assets/documentation-images/presentation-image.png" width="auto" />
+<img src="../assets/documentation-images/presentation-image.png" width="auto" />
 
 <div align="center">
  <a href="#project">Project 🗄️</a> | <a href="#how"> How ❓</a> | <a href="#technologies">Technologies 💡</a> | <a href="#execution">Execution 👨🏽‍💻</a> | <a href="#more">More Images 🏕️</a>
