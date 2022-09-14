@@ -74,11 +74,11 @@ export function SideBarRight({
       <BoxButtons>
         <BtnLocation type="button" onClick={handleSetInfoWeather}>
           <Icon code="reactIconLocation" />
-          Current Location
+          <span>Current Location</span>
         </BtnLocation>
         <BtnRefresh type="button" onClick={handleSetInfoWeather}>
           <Icon code="reactIconRefresh" />
-          Refresh
+          <span>Refresh</span>
         </BtnRefresh>
       </BoxButtons>
     </Container>

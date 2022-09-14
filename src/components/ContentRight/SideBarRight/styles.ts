@@ -5,8 +5,10 @@ export const Container = styled.div`
   flex-direction: column;
 
   flex: 1;
-  gap: 20px;
+
   max-width: 30%;
+  height: 100%;
+
   padding: 5rem 2rem;
 
   /* Glassmorphism */
@@ -15,6 +17,12 @@ export const Container = styled.div`
   box-shadow: 0px 0px 5px rgb(0 0 0 / 60%);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
+
+  @media (max-height: 720px) {
+    height: none;
+
+    padding: 0rem 2rem;
+  }
 `;
 
 export const SectionRightTop = styled.div`
@@ -23,11 +31,11 @@ export const SectionRightTop = styled.div`
 
   gap: 20px;
 
-  padding: 1rem 0rem;
+  padding: 1.5rem 0rem;
 
   border-bottom: 1px solid ${(props) => props.theme["gray-300"]};
 
-  h3 {
+  > h3 {
     color: ${(props) => props.theme.white};
     font-weight: 600;
   }
@@ -38,14 +46,26 @@ export const SectionRightTop = styled.div`
 
     color: ${(props) => props.theme.white};
   }
+
+  @media (max-height: 720px) {
+    gap: 5px;
+
+    padding: 1.7rem 0rem;
+  }
 `;
 
 export const BoxButtons = styled.div`
   display: flex;
-  align-items: flex-end;
   justify-content: space-around;
 
-  height: auto;
+  padding: 1.5rem 0rem;
+  margin-top: 15px;
+
+  @media (max-height: 720px) {
+    height: none;
+
+    padding: 0rem;
+  }
 `;
 
 //Variable created in order not to repeat the code for styling components whose styles are "equal", changing only their width.
@@ -64,7 +84,6 @@ export const stylesButton = css`
   border-radius: 0.5rem;
   background: ${(props) => props.theme["bluish-green"]};
 
-  font-weight: 500;
   text-transform: uppercase;
   color: ${(props) => props.theme.white};
 
@@ -75,6 +94,11 @@ export const stylesButton = css`
   will-change: transform;
 
   margin-bottom: 50px;
+
+  > span {
+    font-size: 0.875em;
+    font-weight: 500;
+  }
 
   > svg {
     width: 25px;
@@ -90,6 +114,19 @@ export const stylesButton = css`
     box-shadow: none;
     transform: translateY(0);
     filter: brightness(0.9);
+  }
+
+  @media (max-height: 720px) {
+    padding: 0 1rem;
+
+    > span {
+      font-size: 0.75rem;
+    }
+
+    > svg {
+      width: 18px;
+      height: 18px;
+    }
   }
 `;
 

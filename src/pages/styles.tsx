@@ -45,5 +45,6 @@ export const Container = styled.div<IContainerProps>`
   overflow-y: auto;
 
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(${(props) => TimeIconBackgroundList[props.icon]});
+    url(${(props) => TimeIconBackgroundList[props.icon]}) no-repeat;
+  background-size: cover;
 `;
