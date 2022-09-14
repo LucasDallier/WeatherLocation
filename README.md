@@ -1,6 +1,6 @@
 # Weather Location ⛅
 
-<img src="./imgs/documentation-images/presentation-image.png" width="auto" />
+<img src="./imgs/presentation-image.png" width="auto" />
 
 <div align="center">
  <a href="#project">Project 🗄️</a> | <a href="#how"> How ❓</a> | <a href="#technologies">Technologies 💡</a> | <a href="#execution">Execution 👨🏽‍💻</a> | <a href="#more">More Images 🏕️</a>
@@ -48,12 +48,12 @@ To run the project:
   <p align = "center">
     When the application starts, this will be the application's default location, showing the user that he must connect his location to the app by clicking the "Current Location" button.
  </p>
-  <img src="./imgs/documentation-images/default-data-image.png" alt="When the application starts, this will be the application's default location" width="auto">
+  <img src="./imgs/default-data-image.png" alt="When the application starts, this will be the application's default location" width="auto">
 </div>
 
 <div>
   <p align = "center">
     Application with dynamic images according to the weather, temperatures and time
   </p>
-  <img src="./imgs/documentation-images/relative-weather-background.png" alt="Application with dynamic images according to the weather, temperatures and time" width="auto">
+  <img src="./imgs/relative-weather-background.png" alt="Application with dynamic images according to the weather, temperatures and time" width="auto">
 </div>
