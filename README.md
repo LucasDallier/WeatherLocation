@@ -56,4 +56,7 @@ To run the project:
     Application with dynamic images according to the weather, temperatures and time
   </p>
   <img src="./imgs/relative-weather-background.png" alt="Application with dynamic images according to the weather, temperatures and time" width="auto">
+ 
+   <img src="./imgs/relative-weather-background-night.png" alt="Application with dynamic images according to the weather, temperatures and time" width="auto">
+ 
 </div>
