@@ -64,6 +64,13 @@ export const BoxButtons = styled.div`
 
     padding: 0rem;
   }
+
+  @media (height: 741px) {
+    height: none;
+
+    margin-top: 10px;
+    padding: 1rem 0rem;
+  }
 `;
 
 //Variable created in order not to repeat the code for styling components whose styles are "equal", changing only their width.
