@@ -23,6 +23,9 @@ export const Container = styled.div`
 
     padding: 0rem 2rem;
   }
+  @media (max-height: 900px) {
+    padding: 0rem 2rem;
+  }
 `;
 
 export const SectionRightTop = styled.div`
